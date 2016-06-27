@@ -46,7 +46,7 @@
        //    for(var i=0;i<data.length;i++){
          	document.getElementsByTagName("img")[i].src=data[i].img_src;    
          	document.getElementsByTagName("div")[i+2].getElementsByTagName("h2")[0].innerHTML=data[i].img_no+"."+data[i].img_title;
-           	document.getElementsByTagName("div")[i+2].getElementsByTagName("p")[0].innerHTML="<a style='color:white' target='_blank' href="+data[i].img_link+">"+data[i].img_link+"</a>";
+           	document.getElementsByTagName("div")[i+2].getElementsByTagName("p")[0].innerHTML=data[i].img_painter+"<br><a style='color:white' target='_blank' href="+data[i].img_link+">"+data[i].img_link+"</a>";
          }
         }
     }); 
