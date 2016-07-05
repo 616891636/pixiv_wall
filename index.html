@@ -30,15 +30,18 @@
 		
 <script>
      for(var i=0;i<50;i++){
-       	       document.getElementById("iw_thumbs").innerHTML+="<li><img src='images/thumbs/blank_img.jpg' /><div><h2></h2><p></p></div></li>"
+       	       document.getElementById("iw_thumbs").innerHTML+="<li><img src='images/blank_img.jpg' /><div><h2></h2><p></p></div></li>"
      }
         document.getElementById("iw_thumbs").innerHTML+="<li style='padding: 500px;'></li>";
 
 
-	 var load_url="http://56.50.32.168:8080/Pixiv_wall_project/pixiv_wall";
+     var load_url="http://56.50.32.168:8080/Pixiv_wall_project/pixiv_wall";
+  // var load_url="json/pixiv_wall.json";
+
  $.ajax({
         data:{},//这是要传给action的值，action中用getset获取可用
         type: 'post',//struts2使用post不乱码
+  //    type: 'get',//读本地json用这个
         url: load_url,
         dataType: 'json',
         success: function(data) {
