@@ -6,8 +6,50 @@
     <title>每日Pixiv照片墙</title>
 </head> 
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+ <style type="text/css">
+body{ margin:0; }
+#content_line{
+	width:100%;
+} 
+.fullwidth .expand{
+	width:100%;
+	height:1px;
+	background:#2187e7;
+	position:absolute;
+	box-shadow:0px 0px 10px 1px rgba(0,198,255,0.7);
+    -moz-animation:fullexpand 10s ease-out;
+	-webkit-animation:fullexpand 10s ease-out;
+}
+
+@-moz-keyframes fullexpand{
+	0%{width:0px;}
+	100%{ width:100%;}	
+}
+@-webkit-keyframes fullexpand{
+	0%{width:0px;}
+	8%{ width:100%;}	
+}
+
+</style>
+ <script type="text/javascript" src="js/jquery-1.6.1.js" ></script>
+ <script type="text/javascript">	
+$(document).ready(function(){
+	$('#content_line').removeClass('fullwidth');
+		$('#content_line').removeClass('fullwidth').delay(10).queue(function(next){
+			$(this).addClass('fullwidth');
+			next();
+		});
+});
+</script>
+
+ 
+ 
  
  <body  style="overflow:-Scroll;overflow-y:hidden;font-family:'微软雅黑';font-style:italic;" >
+<div id="content_line">
+	<span class="expand"></span>
+</div>
+		
 		<div class="content">
 			<header>
 <!--		<h1>A silent world</h1>
@@ -27,8 +69,21 @@
 		<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 		
-		
 <script>
+window.onload=function (){
+    setTimeout("subSomething()",3000);
+}
+function subSomething() {
+    if(document.readyState == "Loaded") {//当页面加载状态//Load提示第一个div隐藏掉//将Html显示
+           }else{document.getElementById("content_line").innerHTML=""};
+}
+
+
+
+
+
+
+
      for(var i=0;i<50;i++){
        	       document.getElementById("iw_thumbs").innerHTML+="<li><img src='images/blank_img.jpg' /><div><h2></h2><p></p></div></li>"
      }
