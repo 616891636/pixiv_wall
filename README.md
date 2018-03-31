@@ -5,9 +5,9 @@
 https://616891636.github.io/pixiv_wall.html
 
 2018年03月31日更新<br>  
-搭建服务器，实现github page 每日更新pixiv数据
-实现redis数据缓存
-解决github page 跨域问题
+搭建服务器，实现github page 每日更新pixiv数据<br>  
+实现redis数据缓存<br>  
+解决github page 跨域问题<br>  
 
 ![image](https://github.com/616891636/616891636.github.io/blob/master/img/github/simple20180331.png)
 
