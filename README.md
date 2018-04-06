@@ -5,7 +5,7 @@
 https://616891636.github.io/pixiv_wall.html
 
 
-2018年04月06日更新<br>  
+2018年04月06日更新<br>
 悲报！！！服务器中了btc病毒，社会真是险恶<br>  
 ![image](https://github.com/616891636/616891636.github.io/blob/master/img/github/simple20180406.png)
 
